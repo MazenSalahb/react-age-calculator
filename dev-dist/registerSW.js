@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/react-age-calculator/dev-sw.js?dev-sw', { scope: '/react-age-calculator/', type: 'classic' })

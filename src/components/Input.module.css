@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  span {
+    color: var(--lightRed);
+    font-style: italic;
+  }
+}
+
+.inputContainer {
+  p {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--smokeGrey);
+    letter-spacing: 5px;
+  }
+  input {
+    font-family: "Poppins";
+    outline: none;
+    width: 90%;
+    max-width: 160px;
+    /* height: 60px; */
+    border: 1px solid var(--lightGrey);
+    border-radius: 6px;
+    padding: 16px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  input:focus {
+    border-color: var(--purple);
+    caret-color: var(--purple);
+  }
+}
+
+@media (max-width: 480px) {
+  .inputContainer {
+    input {
+      font-size: 19px;
+    }
+  }
+}
+
+.error {
+  color: var(--lightRed);
+  font-style: italic;
+}
+
+.labelError {
+  color: var(--lightRed) !important;
+}
+
+.inputError {
+  border-color: var(--lightRed) !important;
+}
